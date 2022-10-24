@@ -1,0 +1,21 @@
+.AddAd {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  .title {
+    color: #000;
+    font-size: 36px;
+    font-family: "RobotoBold";
+    width: 100%;
+    text-align: center;
+  }
+  .line {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    bottom: 1px;
+    box-sizing: border-box;
+    height: 1px;
+    margin-bottom: 13px;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,50 @@
+.mainfilter{
+    width: 50%;
+    margin: 0 auto;
+    .title{
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000;
+        font-family: "RobotoBold";
+        font-weight: bold;
+    }
+    .submenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        .submenus{
+            color: rgb(0, 134, 191);
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: left;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+            &:hover{
+                color: red;
+            }
+        }
+        span{
+            color: #8391a2;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+}
+@media (max-width: 768px){
+    .mainfilter{
+        width: 95%;
+        margin: 0 auto;
+        .submenu{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+    }
+}

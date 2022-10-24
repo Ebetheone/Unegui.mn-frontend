@@ -1,0 +1,19 @@
+.ad {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .ad{
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

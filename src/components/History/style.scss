@@ -1,0 +1,68 @@
+.history {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  .title {
+    width: 100%;
+    color: rgb(153, 153, 153);
+    font-family: "RobotoRegular";
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    .boxitem {
+      display: block;
+      width: 100%;
+      box-shadow: 0 11px 35px 0 rgb(0 0 0 / 10%);
+      height: 45px;
+      cursor: pointer;
+      border-radius: 5px;
+      .flex {
+        display: flex;
+        padding-top: 10px;
+        padding-left: 10px;
+        img {
+          width: 15px;
+          height: 15px;
+          object-fit: cover;
+          padding-right: 10px;
+        }
+        .item {
+          color: rgb(0, 0, 0);
+          font-size: 13px;
+          line-height: 15px;
+        }
+        .city {
+          color: rgb(0, 0, 0);
+          font-size: 13px;
+          line-height: 15px;
+        }
+        .price {
+          color: rgb(0, 0, 0);
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .history {
+    width: 100%;
+    .box {
+      gap: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      .boxitem {
+        width: 95%;
+      }
+    }
+  }
+}

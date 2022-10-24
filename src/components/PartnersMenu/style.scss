@@ -1,0 +1,58 @@
+.partnermenu {
+  width: 50%;
+  margin: 0 auto;
+  .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    h1 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      font-weight: bolder;
+      font-family: "RobotoBold";
+    }
+    .red {
+      background-color: rgb(230, 8, 3);
+      border-radius: 3px;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-size: 14px;
+      height: 28px;
+      margin-left: 7px;
+      margin-top: 4px;
+      padding: 0 15px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    .items {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 4px;
+      p {
+        color: rgb(0, 134, 191);
+        cursor: pointer;
+        font-size: 15px;
+        &:hover {
+          color: rgb(230, 8, 3);
+        }
+      }
+      span {
+        color: rgb(150, 150, 150);
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}

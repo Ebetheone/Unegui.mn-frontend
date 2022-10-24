@@ -1,0 +1,26 @@
+[
+  {
+    "img": "https://cdn.unegui.mn/media/compu.png",
+    "item": "Apple, macbook air m2,",
+    "city": "Улаанбаатар",
+    "price": "4.5 сая"
+  },
+  {
+    "img": "https://cdn.unegui.mn/media/animals.png",
+    "item": "Нохой,",
+    "city": "Улаанбаатар",
+    "price": "5 сая"
+  },
+  {
+    "img": "https://cdn.unegui.mn/media/lesure.png",
+    "item": "Бөмбөг,",
+    "city": "Улаанбаатар",
+    "price": "50,000"
+  },
+  {
+    "img": "https://cdn.unegui.mn/media/tel2.png",
+    "item": "IPhone 13 Pro,",
+    "city": "Улаанбаатар",
+    "price": "3 сая"
+  }
+]

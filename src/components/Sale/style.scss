@@ -1,0 +1,61 @@
+.sale {
+  width: 50%;
+  margin: 0 auto;
+  .title {
+    font-family: "RobotoBold";
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding-top: 20px;
+    text-align: left;
+    width: 100%;
+  }
+  .things {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    .link{
+      text-decoration: none;
+    .piece {
+      margin-bottom: 15px;
+      margin-right: 10px;
+      color: rgb(0, 134, 191);
+      text-decoration-color: rgb(0, 134, 191);
+      &:hover {
+        color: rgb(230, 8, 3);
+      }
+      cursor: pointer;
+      .img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .desc {
+        font-family: "RobotoBold";
+        font-size: 15px;
+      }
+      .price {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        font-family: "RobotoRegular";
+        margin-bottom: 5px;
+      }
+    }
+  }
+  }
+}
+@media (max-width: 768px){
+  .sale{
+    width: 100%;
+    margin: 0 5px;
+    .things{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media (max-width: 400px){
+  .sale{
+    .things{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

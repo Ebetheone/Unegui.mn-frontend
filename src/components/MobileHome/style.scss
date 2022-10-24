@@ -1,0 +1,260 @@
+.Main {
+  width: 100%;
+  .mobilehome {
+    width: 95%;
+    margin: 0 auto;
+    .formone {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid rgb(229, 229, 229);
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(204, 204, 204) 0px 3px 10px 0px;
+        box-sizing: border-box;
+        font-size: 14px;
+        height: 40px;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-size: 13px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 0;
+        img {
+          width: 15px;
+          height: 15px;
+          object-fit: cover;
+        }
+      }
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+      .formtwo {
+        width: 49.5%;
+        margin-right: auto;
+        position: relative;
+        input {
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid rgb(229, 229, 229);
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgb(204, 204, 204) 0px 3px 10px 0px;
+          box-sizing: border-box;
+          font-size: 14px;
+          height: 40px;
+          cursor: pointer;
+        }
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          background-color: transparent;
+          box-sizing: border-box;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          font-size: 13px;
+          position: absolute;
+          top: 2px;
+          left: 0;
+          gap: 5px;
+          img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+          }
+        }
+      }
+      .absolute {
+        position: absolute;
+        left: 0%;
+        top: 105%;
+        width: 50%;
+        z-index: 1;
+        height: 200px;
+        display: flex;
+        background-color: rgb(243, 243, 243);
+        flex-direction: column;
+        align-items: center;
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        border-radius: 5px;
+        p {
+          border-bottom: 1px solid rgb(197, 197, 197);
+          width: 98%;
+          margin: 0 auto;
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .formthree {
+        width: 49.5%;
+        margin-left: auto;
+        position: relative;
+        input {
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid rgb(229, 229, 229);
+          background-color: rgb(255, 255, 255);
+          box-shadow: rgb(204, 204, 204) 0px 3px 10px 0px;
+          box-sizing: border-box;
+          font-size: 14px;
+          height: 40px;
+          cursor: pointer;
+        }
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+          background-color: transparent;
+          box-sizing: border-box;
+          color: rgb(0, 0, 0);
+          cursor: pointer;
+          font-size: 13px;
+          position: absolute;
+          top: 2px;
+          left: 0;
+          gap: 5px;
+          img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .Menutitle {
+      width: 100%;
+      color: rgb(153, 153, 153);
+      font-family: "RobotoRegular";
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .menus {
+      list-style: none;
+      width: 100%;
+      margin-bottom: 20px;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      height: 70px;
+      .menuitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        border-radius: 5px;
+        border: 1px solid rgb(229, 229, 229);
+        box-shadow: rgb(204, 204, 204) 0px 3px 10px 0px;
+        box-sizing: border-box;
+        font-size: 13px;
+        height: 70px;
+        margin-right: 5px;
+        padding: 6px;
+        width: 110px !important;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+        p {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+    .Maintitle {
+      width: 100%;
+      font-family: "RobotoBold";
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      .mainitem {
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+        span {
+          margin-top: 10px;
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 3px;
+        }
+        p {
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .all {
+      border-radius: 5px;
+      border: 1px solid rgb(229, 229, 229);
+      box-shadow: rgb(204, 204, 204) 0px 3px 10px 0px;
+      color: rgb(0, 134, 191);
+      font-family: "RobotoBold";
+      font-size: 15px;
+      height: 40px;
+      margin-bottom: 26px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      background-color: transparent;
+      margin-top: 30px;
+    }
+  }
+  .subs {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    .subitem {
+      color: rgb(0, 134, 191);
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 30px;
+      text-decoration: none;
+      font-family: "RobotoRegular";
+      font-weight: 400;
+      padding-left: 20px;
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}

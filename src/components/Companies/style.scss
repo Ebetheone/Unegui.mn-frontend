@@ -1,0 +1,121 @@
+.companies {
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  .items {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
+    position: relative;
+    cursor: pointer;
+    img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      .title {
+        color: rgb(0, 134, 191);
+        font-size: 20px;
+        padding-bottom: 7px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: left;
+        width: 100%;
+        &:hover {
+          color: rgb(255, 0, 0);
+        }
+      }
+      p {
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+        font-family: "RobotoRegular";
+        margin-top: 5px;
+        text-align: left;
+        width: 100%;
+      }
+      span {
+        color: rgb(136, 136, 136);
+        font-size: 13px;
+        margin-top: 5px;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}
+.btns {
+  width: 50%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  .pages {
+    display: flex;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        &:nth-child(1) {
+          background-color: #f00;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &:nth-child(2) {
+          &:hover {
+            background-color: rgb(212, 212, 212);
+          }
+        }
+        &:nth-child(3) {
+          &:hover {
+            background-color: rgb(212, 212, 212);
+          }
+        }
+        .c1 {
+          text-decoration: none;
+          color: #fff;
+          font-size: 21px;
+        }
+        .c2,
+        .c3 {
+          text-decoration: none;
+          color: rgb(0, 134, 191);
+          font-size: 21px;
+        }
+      }
+    }
+  }
+  .next {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    color: rgb(0, 134, 191);
+    cursor: pointer;
+    font-size: 21px;
+    margin-left: 20px;
+    text-decoration: none;
+    &:hover {
+      color: rgb(255, 0, 0);
+    }
+  }
+}

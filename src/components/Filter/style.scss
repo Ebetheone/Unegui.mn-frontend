@@ -1,0 +1,235 @@
+#upper {
+  .SearchBar {
+    background-color: #f3f3f3;
+    height: 70px;
+    width: 100%;
+    .Content {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .Search {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        .Input {
+          border: 2px solid rgb(167, 167, 167);
+          border-right: none;
+          height: 38px;
+          line-height: 18px;
+          font-size: 18px;
+          width: 320px;
+          background: white;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        .Text {
+          background-color: transparent;
+          &:hover {
+            background-color: #fff5c3;
+          }
+          p {
+            border: 2px solid rgb(167, 167, 167);
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            padding-left: 5px;
+            font-size: 18px;
+            line-height: 18px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            background: white;
+            width: 180px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            cursor: pointer;
+          }
+          img {
+            padding-left: 50px;
+          }
+          .test {
+            position: absolute;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            height: 258px;
+            z-index: 10;
+            p {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              font-size: 16px;
+              background-color: white;
+              height: 25px;
+              width: 155px;
+              padding: 5px 10px;
+              &:hover {
+                background-color: #e3e3e3;
+              }
+            }
+          }
+        }
+        .Button {
+          margin-left: 20px;
+          display: flex;
+          align-items: center;
+          background-color: #e60803;
+          width: 18%;
+          height: 38px;
+          border-radius: 5px;
+          border: none;
+          font-weight: bolder;
+          font-size: 20px;
+          color: white;
+          cursor: pointer;
+          img {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+      .searchTwo {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        width: 35%;
+        position: relative;
+        .TextOne {
+          width: 100%;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 2px solid rgb(167, 167, 167);
+          position: relative;
+          &:hover {
+            background-color: #fff5c3;
+          }
+          .itemImage {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            margin-left: 25px;
+          }
+          .bula {
+            padding-left: 5px;
+            font-size: 18px;
+            line-height: 18px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            border-radius: 3px;
+            cursor: pointer;
+            gap: 40px;
+          }
+          img {
+            object-fit: cover;
+            width: 10px;
+            height: 6px;
+          }
+          .test {
+            position: absolute;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            top: 40px;
+            left: 0%;
+            z-index: 101;
+            .flexbox {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              background-color: white;
+              width: 285px;
+              padding: 5px 10px;
+              &:hover {
+                background-color: #e3e3e3;
+              }
+              .subtext {
+                font-size: 16px;
+                border: none;
+                padding-right: 0;
+                width: 80%;
+                text-align: center;
+              }
+              span {
+                color: rgb(160, 160, 160);
+                font-size: 12px;
+                line-height: 12px;
+              }
+            }
+          }
+          .submenu {
+            position: absolute;
+            scroll-behavior: smooth;
+            z-index: 102;
+            .submenus {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-bottom: 2px solid rgb(160, 160, 160);
+            }
+            .submenutext {
+              box-sizing: border-box;
+              color: rgb(0, 0, 0);
+              cursor: pointer;
+              font-size: 16px;
+              line-height: 16px;
+              padding: 15px;
+            }
+            .submenunumber {
+              box-sizing: border-box;
+              color: rgb(160, 160, 160);
+              cursor: pointer;
+              font-size: 12px;
+              line-height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .filter {
+    .SearchBar {
+      .Content {
+        width: 100%;
+        .Search {
+          .Input {
+            width: 100%;
+          }
+          .Text {
+            p {
+              width: 130%;
+            }
+            img {
+              padding-left: 20px;
+            }
+            .test {
+              p {
+                width: 100%;
+                object-fit: fill;
+              }
+            }
+          }
+        }
+        .searchTwo {
+          .TextOne {
+            .itemImage {
+              margin-left: 15px;
+            }
+            .bula {
+              gap: 30px;
+            }
+            .test {
+              .flexbox {
+                width: 100%;
+                padding: 0;
+                .subtext {
+                  width: 70%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

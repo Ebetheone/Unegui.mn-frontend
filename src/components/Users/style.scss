@@ -1,0 +1,306 @@
+.users {
+  width: 50%;
+  margin: 0 auto;
+  .title {
+    width: 100%;
+    border: 0px none rgb(0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(0, 134, 191);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 3px;
+    text-decoration-color: rgb(0, 134, 191);
+    text-decoration-style: solid;
+    text-align: left;
+    &:hover {
+      color: #e60803;
+    }
+  }
+  .line {
+    margin-top: 30px;
+  }
+  .weird {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .store {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      h2 {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: bold;
+      }
+      a {
+        background-color: rgb(230, 8, 3);
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 4px;
+        padding: 0 10px;
+        text-decoration: none;
+        width: 136px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex: 3;
+      list-style: none;
+      .ac {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-right: 5px;
+        text-align: left;
+        color: rgb(0, 134, 191);
+        &:hover {
+          color: #e60803;
+        }
+        img {
+          width: 85px;
+          object-fit: cover;
+        }
+        a {
+          width: 120px;
+          color: rgb(0, 134, 191);
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 16px;
+          text-align: left;
+          padding-left: 5px;
+          &:hover {
+            color: #e60803;
+          }
+        }
+        p {
+          width: 120px;
+          color: rgb(136, 136, 136);
+          font-size: 12px;
+          padding-top: 2px;
+          text-align: left;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .read {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    width: 100%;
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      width: 100%;
+      text-align: left;
+    }
+    ul {
+      list-style: none;
+      padding-left: 15px;
+      width: 100%;
+      li {
+        border-right: 1px solid rgb(204, 204, 204);
+        box-sizing: border-box;
+        color: rgb(136, 136, 136);
+        display: table-cell;
+        font-size: 14px;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+        width: calc(100% / 3);
+        .all {
+          width: 100%;
+          font-size: 14px;
+          text-align: left;
+          .first {
+            color: rgb(136, 136, 136);
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            img {
+              width: 27px;
+              height: 26px;
+              object-fit: cover;
+              padding-right: 10px;
+            }
+          }
+          .second {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: left;
+            width: 100%;
+          }
+        }
+      }
+      .ebu {
+        padding-left: 0;
+      }
+      .abu {
+        border: none;
+      }
+    }
+  }
+  hr {
+    margin-bottom: 40px;
+  }
+  .top {
+    width: 100%;
+    padding-bottom: 30px;
+    .text {
+      width: 100%;
+      .textone {
+        width: 100%;
+        h3 {
+          width: 100%;
+          color: rgb(0, 0, 0);
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 1px;
+        }
+        a {
+          color: rgb(0, 134, 191);
+          cursor: pointer;
+          font-size: 16px;
+          text-decoration: none;
+          padding-right: 5px;
+          &:hover {
+            color: #e60803;
+          }
+        }
+      }
+      hr {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        margin-bottom: 20px;
+        opacity: 0.7;
+        width: 100%;
+      }
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      background-color: rgb(10, 102, 194);
+      border-radius: 2px;
+      width: 60px;
+      &:hover {
+        background-color: #3b5998;
+      }
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        padding-left: 2px;
+      }
+      p {
+        color: #fff;
+        font-size: 10px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .users {
+    width: 100%;
+    .title {
+      padding-left: 10px;
+    }
+    .weird {
+      flex-direction: column;
+      .store {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+      }
+      .list {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex: 3;
+        list-style: none;
+        .ac {
+          justify-content: none;
+          .min {
+            width: calc(100% / 3);
+          }
+        }
+      }
+    }
+    .read {
+      h2 {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    .top {
+      width: 100%;
+      padding-bottom: 30px;
+      .text {
+        width: 100%;
+        .textone {
+          width: 100%;
+          padding-left: 10px;
+          h3 {
+            width: 100%;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 1px;
+          }
+          a {
+            color: rgb(0, 134, 191);
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            padding-right: 5px;
+            &:hover {
+              color: #e60803;
+            }
+          }
+        }
+        hr {
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        p {
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          margin-bottom: 20px;
+          opacity: 0.7;
+          width: 100%;
+          padding-left: 10px;
+        }
+      }
+    }
+    .links{
+      margin-left: 10px;
+    }
+  }
+}

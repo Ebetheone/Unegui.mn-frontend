@@ -1,0 +1,48 @@
+.hamburger {
+  .ab {
+    width: 280px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    height: 100%;
+    padding: 32px 16px;
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    .images {
+      display: flex;
+      height: 70px;
+      gap: 10px;
+      flex-direction: column;
+      margin-top: 20px;
+      text-align: left;
+      .Transparent {
+        padding-right: 10px;
+        font-size: 15px;
+        padding-top: 5px;
+        color: #000;
+        &:hover {
+          color: #e60803;
+        }
+      }
+      .white {
+        padding-right: 10px;
+        font-size: 15px;
+        padding-top: 5px;
+        color: #000;
+        &:hover {
+          color: #e60803;
+        }
+      }
+      .setting {
+        color: #000;
+        padding-top: 5px;
+        &:hover {
+          color: #e60803;
+        }
+      }
+    }
+  }
+}

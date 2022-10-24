@@ -1,0 +1,194 @@
+.login {
+  width: 50%;
+  margin: 0 auto;
+  height: 54.1vh;
+  .main {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 100px;
+    .form {
+      width: 100%;
+      .title {
+        border-bottom: 1px solid rgb(217, 217, 217);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 38px;
+        margin-top: 35px;
+        padding-bottom: 10px;
+        padding-left: 230px;
+        width: auto;
+      }
+      .inputs {
+        display: block;
+        width: 100%;
+        .top {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          .text {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-family: "RobotoBold";
+            font-weight: bold;
+            padding-right: 30px;
+            text-align: right;
+            width: 230px;
+          }
+          .phone {
+            padding-right: 10px;
+            width: 120px;
+            select {
+              width: 100%;
+              align-items: center;
+              background-color: transparent;
+              border: 2px solid rgb(179, 179, 179);
+              border-radius: 5px;
+              color: rgb(0, 0, 0);
+              cursor: pointer;
+              font-size: 24px;
+              font-weight: 400;
+              height: 54px;
+              padding: 0 5px;
+              option {
+                width: 100%;
+                color: rgb(0, 0, 0);
+                height: 100%;
+                padding-bottom: 30px;
+                text-align: start;
+              }
+            }
+          }
+          .number {
+            box-sizing: border-box;
+            width: 205px;
+            input {
+              border: 2px solid rgb(179, 179, 179);
+              border-radius: 5px;
+              color: rgb(0, 0, 0);
+              cursor: text;
+              font-family: Arial;
+              font-size: 24px;
+              font-weight: 400;
+              height: 50px;
+              letter-spacing: 2px;
+              padding-left: 10px;
+              text-align: start;
+              width: 100%;
+            }
+          }
+          .desc {
+            width: 230px;
+            box-sizing: border-box;
+            margin-left: 30px;
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+        .bottom {
+          width: auto;
+          padding-left: 230px;
+          .check {
+            margin-top: 24px;
+            padding-left: 30px;
+            width: 100%;
+            display: flex;
+            background-color: transparent;
+            input {
+              width: 20px;
+              height: 20px;
+            }
+            label {
+              margin-left: 5px;
+              margin-top: 2px;
+              cursor: pointer;
+              font-size: 14px;
+              width: 640px;
+            }
+          }
+          .warning {
+            color: rgb(234, 0, 0);
+            font-size: 14px;
+            margin-top: 20px;
+            width: 100%;
+            padding-left: 30px;
+          }
+          .enable{
+            font-size: 14px;
+            margin-top: 20px;
+            width: 100%;
+            padding-left: 30px;
+            color: rgb(179, 179, 179);
+          }
+          .button {
+            align-items: flex-start;
+            background-color: rgb(234, 94, 0);
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            height: 50px;
+            margin-right: 10px;
+            margin-top: 10px;
+            outline-color: rgb(255, 255, 255);
+            padding: 0 25px;
+            text-align: center;
+            margin-left: 30px;
+          }
+          .disable {
+            align-items: flex-start;
+            background-color: rgb(179, 179, 179);
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            height: 50px;
+            margin-right: 10px;
+            margin-top: 10px;
+            outline-color: rgb(255, 255, 255);
+            padding: 0 25px;
+            text-align: center;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .login {
+    width: 100%;
+    .main {
+      .form {
+        .title {
+          padding-left: 30%;
+        }
+        .inputs {
+          .top {
+            .text {
+              width: 30%;
+            }
+            .number {
+              width: 30%;
+              input {
+                width: 80%;
+              }
+            }
+            .desc {
+              width: 30%;
+              margin: 0;
+            }
+          }
+          .bottom {
+            padding-left: 30%;
+            .check {
+              label {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

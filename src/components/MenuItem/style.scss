@@ -1,0 +1,36 @@
+.menuitem {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  font-family: "RobotoBold";
+  color: #000;
+  &:hover {
+    color: #e60500;
+  }
+  .imgContainer {
+    height: 40px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .img {
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 9px 11px;
+      object-fit: cover;
+    }
+  }
+  .para {
+    font-size: 18px;
+    width: auto;
+    font-weight: bold;
+  }
+}

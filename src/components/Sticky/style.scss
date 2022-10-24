@@ -1,0 +1,162 @@
+.sticky {
+  margin: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-left: 623px;
+  margin-top: 30px;
+  .partone {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    .price {
+      margin-top: 10px;
+      color: #000;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        position: absolute;
+      }
+      .word {
+        padding-top: 18px;
+        padding-left: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+      }
+    }
+    .phonenumber {
+      margin-top: 25px;
+      width: 100%;
+      color: #fff;
+      background-color: #e60803;
+      cursor: pointer;
+      height: 60px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:hover {
+        background-color: #b80502;
+      }
+      .bla {
+        display: block;
+        .textone {
+          font-size: 20px;
+          font-weight: bold;
+          font-family: "RobotoBold";
+          padding-left: 20px;
+        }
+        .texttwo {
+          font-size: 14px;
+          padding-left: 20px;
+        }
+      }
+      img {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+        padding-right: 20px;
+      }
+    }
+    .announcement {
+      margin-top: 10px;
+      width: 100%;
+      height: 65px;
+      margin-bottom: 5px;
+      color: #f66;
+      background: #fcd9d9 !important;
+      font-size: 12px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .announ {
+        padding-left: 20px;
+        text-align: left;
+        font-weight: bold;
+        &:hover {
+          color: #e60803;
+        }
+      }
+      img {
+        width: 30px;
+        height: 27px;
+        object-fit: cover;
+        padding-right: 20px;
+      }
+    }
+  }
+  .parttwo {
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 59px;
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .name {
+      color: #000;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: "RobotoRegular";
+      width: 100%;
+    }
+    .date {
+      font-size: 14px;
+      width: 100%;
+    }
+    .author {
+      margin-top: 10px;
+      color: rgb(0, 134, 191);
+      font-size: 14px;
+      text-decoration-color: rgb(0, 134, 191);
+      width: 100%;
+      &:hover {
+        color: #e60803;
+      }
+    }
+    .complain {
+      font-size: 14px;
+      color: rgb(0, 134, 191);
+      text-decoration-color: rgb(0, 134, 191);
+      width: 100%;
+      &:hover {
+        color: #e60803;
+      }
+    }
+    .logo {
+      background-color: #3b5998;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 85px;
+      height: 53px;
+      margin-top: 15px;
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+      }
+      p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .sticky {
+    position: relative;
+    margin: 0;
+    width: 300px;
+    margin-left: 20px;
+  }
+}

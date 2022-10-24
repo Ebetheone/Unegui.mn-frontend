@@ -1,0 +1,96 @@
+.SearchBar--Container {
+  position: relative;
+  background-color: #f3f3f3;
+  height: 70px;
+  width: 100%;
+}
+.SearchBar--Content {
+  width: 50%;
+  margin: 0 auto;
+}
+.SearchBar--Search {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.SearchBar--Input {
+  border: 2px solid #e60803;
+  border-right: none;
+  height: 38px;
+  line-height: 18px;
+  font-size: 18px;
+  width: 320px;
+  background: white;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.SearchBar--Text > p {
+  border: 2px solid #e60803;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 5px;
+  font-size: 18px;
+  line-height: 18px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 180px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.SearchBar--Text > :hover {
+  background-color: #fff5c3;
+}
+.SearchBar--Text img {
+  padding-left: 50px;
+}
+.SearchBar--Button {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #e60803;
+  width: 18%;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.SearchBar--Button img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.test {
+  position: absolute;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 258px;
+}
+.test p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  background-color: white;
+  height: 25px;
+  width: 155px;
+  padding: 5px 10px;
+}
+.test p:hover {
+  background-color: #e3e3e3;
+}
+@media (max-width: 768px) {
+  .SearchBar--Container {
+    .SearchBar--Content {
+      width: 90%;
+      margin: 0 auto;
+      .SearchBar--Input {
+        width: 50%;
+      }
+      .SearchBar--Text img {
+        padding-left: 30px;
+      }
+    }
+  }
+}

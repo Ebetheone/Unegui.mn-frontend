@@ -1,0 +1,53 @@
+.same {
+  width: 65%;
+  margin-right: auto;
+  box-sizing: border-box;
+  .title {
+    font-family: "RobotoBold";
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    padding-top: 20px;
+    text-align: left;
+    width: 100%;
+    color: rgb(102, 102, 102);
+  }
+  .things {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    .link {
+      text-decoration: none;
+      .piece {
+        margin-bottom: 15px;
+        margin-right: 10px;
+        color: rgb(0, 134, 191);
+        text-decoration-color: rgb(0, 134, 191);
+        &:hover {
+          color: rgb(230, 8, 3);
+        }
+        cursor: pointer;
+        .img {
+          width: 100%;
+          object-fit: cover;
+        }
+        .desc {
+          font-family: "RobotoBold";
+          font-size: 15px;
+        }
+        .price {
+          font-size: 15px;
+          color: rgb(0, 0, 0);
+          font-family: "RobotoRegular";
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .same {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
